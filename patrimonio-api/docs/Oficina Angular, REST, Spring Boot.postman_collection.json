@@ -1,0 +1,96 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Oficina Angular, REST, Spring Boot",
+		"_postman_id": "01157bdc-4de1-4ecb-11b5-7d6b77bbe532",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Listar",
+			"request": {
+				"url": "http://localhost:8080/itens",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Criar",
+			"request": {
+				"url": "http://localhost:8080/itens",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"etiqueta\": \"CC0987\",\n    \"descricao\": \"Notebook Cinza\",\n    \"dataAquisicao\": \"2017-08-29T17:00:00.000\"\n}\n"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Alterar",
+			"request": {
+				"url": "http://localhost:8080/itens/1",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"etiqueta\": \"NT0123\",\n    \"descricao\": \"Notebook i8\",\n    \"dataAquisicao\": \"2017-09-17\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar",
+			"request": {
+				"url": "http://localhost:8080/itens/1",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Remover",
+			"request": {
+				"url": "http://localhost:8080/itens/1",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
