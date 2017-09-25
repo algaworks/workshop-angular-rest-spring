@@ -43,54 +43,6 @@
 				"description": ""
 			},
 			"response": []
-		},
-		{
-			"name": "Alterar",
-			"request": {
-				"url": "http://localhost:8080/itens/1",
-				"method": "PUT",
-				"header": [
-					{
-						"key": "Content-Type",
-						"value": "application/json",
-						"description": ""
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"etiqueta\": \"NT0123\",\n    \"descricao\": \"Notebook i8\",\n    \"dataAquisicao\": \"2017-09-17\"\n}"
-				},
-				"description": ""
-			},
-			"response": []
-		},
-		{
-			"name": "Buscar",
-			"request": {
-				"url": "http://localhost:8080/itens/1",
-				"method": "GET",
-				"header": [
-					{
-						"key": "Accept",
-						"value": "application/json",
-						"description": ""
-					}
-				],
-				"body": {},
-				"description": ""
-			},
-			"response": []
-		},
-		{
-			"name": "Remover",
-			"request": {
-				"url": "http://localhost:8080/itens/1",
-				"method": "DELETE",
-				"header": [],
-				"body": {},
-				"description": ""
-			},
-			"response": []
 		}
 	]
 }
